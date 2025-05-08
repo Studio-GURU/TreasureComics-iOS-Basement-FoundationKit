@@ -1,0 +1,381 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TreasureComicsFoundationKit
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import AVFoundation
+import AdSupport
+import AppTrackingTransparency
+import AudioToolbox
+import Foundation
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum CompletionCallback<T, R> {
+  case success(T)
+  case failed(R)
+}
+@_hasMissingDesignatedInitializers public class TXTalsesHandler {
+  public static let shared: TreasureComicsFoundationKit.TXTalsesHandler
+  public var allowLog: Swift.Bool
+  public func i(stackGroup: Swift.String, stackMessage: Swift.String, stackFilePath: Swift.String = #file, stackLineNumber: Swift.Int = #line, stackFunctionName: Swift.String = #function)
+  public func d(stackGroup: Swift.String, stackMessage: Swift.String, stackFilePath: Swift.String = #file, stackLineNumber: Swift.Int = #line, stackFunctionName: Swift.String = #function)
+  public func w(stackGroup: Swift.String, stackMessage: Swift.String, stackFilePath: Swift.String = #file, stackLineNumber: Swift.Int = #line, stackFunctionName: Swift.String = #function)
+  public func e(stackGroup: Swift.String, stackMessage: Swift.String, stackError: (any Swift.Error)? = nil, stackFilePath: Swift.String = #file, stackLineNumber: Swift.Int = #line, stackFunctionName: Swift.String = #function)
+  public func p(stackGroup: Swift.String, stackMessage: Swift.String, stackFilePath: Swift.String = #file, stackLineNumber: Swift.Int = #line, stackFunctionName: Swift.String = #function)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class TXUIViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public func error(stackMessage: Swift.String, stackError: (any Swift.Error)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func info(stackMessage: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public class TXDetermineDialogHandler {
+  public init()
+  public func show(title: Swift.String?, message: Swift.String?, confirm: (name: Swift.String?, event: (() -> Swift.Void)?), cancel: (name: Swift.String?, event: (() -> Swift.Void)?))
+  @objc deinit
+}
+public struct RecentContentData : Swift.Decodable {
+  public let title: Swift.String
+  public let description: Swift.String
+  public let thumbnail: Swift.String
+  public let contentType: Swift.String
+  public let contentCName: Swift.String
+  public let contentEpisodeTitle: Swift.String
+  public let episodeNo: Swift.Int
+  public let genre: Swift.String
+  public let link: Swift.String
+  public let returnUrl: Swift.String
+  public let isWaitFree: Swift.Bool
+  public let freeEpisode: Swift.Int
+  public let waitFreeInfo: TreasureComicsFoundationKit.WaitFreeData?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WaitFreeData : Swift.Decodable {
+  public let chargedTicket: Swift.Bool
+  public let baseDate: Foundation.Date?
+  public let chargedDate: Foundation.Date?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class TXConfirmDialogHandler {
+  public init()
+  public func show(title: Swift.String?, message: Swift.String, confirm: (name: Swift.String?, event: (() -> Swift.Void)?))
+  @objc deinit
+}
+public enum BehaviorDataResult<T> {
+  case success(T)
+  case failure(status: Swift.Int, message: Swift.String)
+}
+public enum TXRLanguageType {
+  case korean
+  public static func == (a: TreasureComicsFoundationKit.TXRLanguageType, b: TreasureComicsFoundationKit.TXRLanguageType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class FoundationKitProperty {
+  public enum ServerEnvironment {
+    case develop, test, live
+    public static func == (a: TreasureComicsFoundationKit.FoundationKitProperty.ServerEnvironment, b: TreasureComicsFoundationKit.FoundationKitProperty.ServerEnvironment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum MemberType {
+    case basic, channeling
+    public static func == (a: TreasureComicsFoundationKit.FoundationKitProperty.MemberType, b: TreasureComicsFoundationKit.FoundationKitProperty.MemberType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static let bridgeName: Swift.String
+  public static var resourceLnguageType: TreasureComicsFoundationKit.TXRLanguageType {
+    get
+  }
+  public static var notificationContractor: (any TreasureComicsFoundationKit.NotificationContract)? {
+    get
+  }
+  public static var purchaseContractor: (any TreasureComicsFoundationKit.PurchaseContract)? {
+    get
+  }
+  public static func createSpeakContractor() -> any TreasureComicsFoundationKit.SpeakContract
+  public static var isInit: Swift.Bool {
+    get
+  }
+  public static var memberType: TreasureComicsFoundationKit.FoundationKitProperty.MemberType {
+    get
+  }
+  public static func contractorStartUp(notification: (any TreasureComicsFoundationKit.NotificationContract)? = nil, purchase: (any TreasureComicsFoundationKit.PurchaseContract)? = nil)
+  public static func config(appId: Swift.String, appSecret: Swift.String, memberType: TreasureComicsFoundationKit.FoundationKitProperty.MemberType, contractorNotification: (any TreasureComicsFoundationKit.NotificationContract)? = nil, contractorPurchase: (any TreasureComicsFoundationKit.PurchaseContract)? = nil, environment serverEnvironment: TreasureComicsFoundationKit.FoundationKitProperty.ServerEnvironment, allowLog: Swift.Bool = false)
+  public static func dispose()
+  @objc deinit
+}
+public struct MonitorSignData : Swift.Decodable {
+  public let sign: Swift.String
+  public let link: Swift.String
+  public init(sign: Swift.String, link: Swift.String)
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum PreviewDeviceType : Swift.String, Swift.CaseIterable {
+  case iPhone15
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [TreasureComicsFoundationKit.PreviewDeviceType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [TreasureComicsFoundationKit.PreviewDeviceType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PurchaseResult {
+  case success
+  case failure(purchaseResultType: TreasureComicsFoundationKit.PurchaseResultType)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TXSpeakHandler : ObjectiveC.NSObject, TreasureComicsFoundationKit.SpeakContract {
+  public func speak(speakEntity: TreasureComicsFoundationKit.SpeakEntity, callbackName: Swift.String)
+  public func speakPause(callbackName: Swift.String)
+  public func speakResume(callbackName: Swift.String)
+  public func speakStop(callbackName: Swift.String)
+  public func speakDestroy()
+  public func speakStatusListener(result: any TreasureComicsFoundationKit.SpeakResult)
+  @objc deinit
+}
+extension TreasureComicsFoundationKit.TXSpeakHandler : AVFAudio.AVSpeechSynthesizerDelegate {
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didStart utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didFinish utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didPause utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didContinue utterance: AVFAudio.AVSpeechUtterance)
+  @objc dynamic public func speechSynthesizer(_ synthesizer: AVFAudio.AVSpeechSynthesizer, didCancel utterance: AVFAudio.AVSpeechUtterance)
+}
+public struct BehaviorDataWebContent {
+  public static func retrieveContentUrl() -> Swift.String
+}
+public protocol SpeakResult {
+  func onSpeakStatus(utteranceId: Swift.String, speakStatus: TreasureComicsFoundationKit.SpeakStatus, callbackName: Swift.String)
+}
+public struct SpeakEntity {
+  public init(speakId: Swift.String, speakText: Swift.String, speechRate: Swift.Float = 0.5, pitch: Swift.Float = 1.0)
+}
+public struct BehaviorDataContent {
+  public static func recommendationContentModel(signKey: Swift.String, adid: Swift.String? = nil, isAdult: Swift.Bool? = nil, completionHandler: @escaping (TreasureComicsFoundationKit.BehaviorDataResult<[TreasureComicsFoundationKit.RecommendationContentData]>) -> Swift.Void)
+  public static func recommendationContentText(signKey: Swift.String, adid: Swift.String? = nil, isAdult: Swift.Bool? = nil, completionHandler: @escaping (TreasureComicsFoundationKit.BehaviorDataResult<Swift.String>) -> Swift.Void)
+  public static func recentContentModel(signKey: Swift.String, completionHandler: @escaping (TreasureComicsFoundationKit.BehaviorDataResult<[TreasureComicsFoundationKit.RecentContentData]>) -> Swift.Void)
+  public static func recentContentText(signKey: Swift.String, completionHandler: @escaping (TreasureComicsFoundationKit.BehaviorDataResult<Swift.String>) -> Swift.Void)
+}
+public enum NotifyStatus : Swift.Int {
+  case none
+  case allow
+  case deny
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct RecommendationContentData : Swift.Decodable {
+  public let recommendationSN: Swift.Int
+  public let title: Swift.String
+  public let description: Swift.String
+  public let thumbnail: Swift.String
+  public let subThumbnail: Swift.String
+  public let contentType: Swift.String
+  public let contentCName: Swift.String?
+  public let episodeNo: Swift.Int?
+  public let genre: Swift.String
+  public let link: Swift.String
+  public let returnUrl: Swift.String
+  public let contentMainUrl: Swift.String
+  public let order: Swift.Int
+  public let freeEpisode: Swift.Int
+  public let recommendationDate: Foundation.Date
+  public let isRewardAvailable: Swift.Bool?
+  public let maxReward: Swift.Int
+  public let minReward: Swift.Int
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class TXRFoundation {
+  public static let shared: TreasureComicsFoundationKit.TXRFoundation
+  public var messageButton: TreasureComicsFoundationKit.TXRFoundation.MessageButton {
+    get
+    set
+  }
+  @_hasMissingDesignatedInitializers public class MessageButton {
+    public var ok: Swift.String {
+      get
+      set
+    }
+    public var confirm: Swift.String {
+      get
+      set
+    }
+    public var cancel: Swift.String {
+      get
+      set
+    }
+    @objc deinit
+  }
+  @objc deinit
+}
+public enum SpeakStatus : Swift.Int {
+  case start
+  case pause
+  case resume
+  case stop
+  case done
+  case playing
+  case muted
+  case error
+  public static func from(value: Swift.String) -> TreasureComicsFoundationKit.SpeakStatus
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class TXScreenMessageHandler {
+  public init()
+  public enum ToastKind {
+    case warn
+    case info
+    case ok
+    case error
+    case none
+    public static func == (a: TreasureComicsFoundationKit.TXScreenMessageHandler.ToastKind, b: TreasureComicsFoundationKit.TXScreenMessageHandler.ToastKind) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public func showToast(kind: TreasureComicsFoundationKit.TXScreenMessageHandler.ToastKind, message: Swift.String, duration: Swift.Double = 2.5, completionHandler: @escaping () -> Swift.Void)
+  public func showSheet(title: Swift.String? = nil, message: Swift.String? = nil, image: UIKit.UIImage? = nil, completionHandler: @escaping () -> Swift.Void)
+  @objc deinit
+}
+public enum TrackingAuthorizationStatus {
+  case none
+  case notDetermined
+  case restricted
+  case denied
+  case authorized
+  public static func == (a: TreasureComicsFoundationKit.TrackingAuthorizationStatus, b: TreasureComicsFoundationKit.TrackingAuthorizationStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class TXRefineHandler {
+  public static let shared: TreasureComicsFoundationKit.TXRefineHandler
+  public func retrieveOSVersion() throws -> Swift.String
+  public func retrieveDeviceModelName() throws -> Swift.String
+  public func retrieveSDKVersionName() throws -> Swift.String?
+  public func retrieveAppPackageName() throws -> Swift.String?
+  public func retrieveAppVersionCode() throws -> Swift.String?
+  public func retrieveAppVersionName() throws -> Swift.String?
+  public func hexColor(hexCode: Swift.String, alpha: CoreFoundation.CGFloat = 1.0) -> UIKit.UIColor
+  public func requestAppTrackingAuthorization(completionHandler: @escaping (TreasureComicsFoundationKit.TrackingAuthorizationStatus, Swift.String) -> Swift.Void)
+  public func retrieveUIWindow() -> UIKit.UIWindow?
+  public func retrieveSafeAreaInsetBottom() -> CoreFoundation.CGFloat
+  public func retrieveSafeAreaInsetTop() -> CoreFoundation.CGFloat
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BehaviorDataAccount {
+  public static func retrieveKey(signKey: Swift.String, completionHandler: @escaping (TreasureComicsFoundationKit.BehaviorDataResult<TreasureComicsFoundationKit.AccountKeyData>) -> Swift.Void)
+  public static func retrieveSign(secret: Swift.String, completionHandler: @escaping (TreasureComicsFoundationKit.BehaviorDataResult<TreasureComicsFoundationKit.MonitorSignData>) -> Swift.Void)
+  @objc deinit
+}
+public struct AccountKeyData : Swift.Decodable {
+  public let accessToken: Swift.String
+  public let refreshToken: Swift.String
+  public init(accessToken: Swift.String, refreshToken: Swift.String)
+  public var isValid: Swift.Bool {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum PurchaseResultType : Swift.Int {
+  case success
+  case userCancelled
+  case pending
+  case productUnavailable
+  case purchaseUnverified
+  case serviceUnavailable
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol NotificationContractorBuilder {
+  func build() -> any TreasureComicsFoundationKit.NotificationContract
+}
+public protocol NotificationContract {
+  func retrieveStatus() -> TreasureComicsFoundationKit.NotifyStatus
+  func updateStatus(status: TreasureComicsFoundationKit.NotifyStatus)
+  func deliverNotification(title: Swift.String, content: Swift.String, iconUrl: Swift.String?, delaySeconds: Swift.Int, payload: [Swift.String : Swift.String]?, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  func openInduceView(rootViewController: UIKit.UIViewController, title: Swift.String, content: Swift.String, iconUrl: Swift.String?, delaySeconds: Swift.Int, payload: Swift.String)
+  func openSetting(rootViewController: UIKit.UIViewController)
+}
+public struct TXQueueHandler<Element> {
+}
+public protocol PurchaseContractBuilder {
+  func build() -> any TreasureComicsFoundationKit.PurchaseContract
+}
+public protocol PurchaseContract {
+  func postPurchase(appToken: Swift.String, productId: Swift.String, completionHandler: @escaping (TreasureComicsFoundationKit.PurchaseResult) -> Swift.Void)
+  func postPurcahseRevision(completionHandler: @escaping (Swift.Int) -> Swift.Void)
+}
+public enum SpeakAction : Swift.String {
+  case start
+  case pause
+  case resume
+  case stop
+  case none
+  public init(rawValue: Swift.String?)
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol SpeakContract : AnyObject {
+  func speak(speakEntity: TreasureComicsFoundationKit.SpeakEntity, callbackName: Swift.String)
+  func speakPause(callbackName: Swift.String)
+  func speakResume(callbackName: Swift.String)
+  func speakStop(callbackName: Swift.String)
+  func speakDestroy()
+  func speakStatusListener(result: any TreasureComicsFoundationKit.SpeakResult)
+}
+extension TreasureComicsFoundationKit.TXRLanguageType : Swift.Equatable {}
+extension TreasureComicsFoundationKit.TXRLanguageType : Swift.Hashable {}
+extension TreasureComicsFoundationKit.FoundationKitProperty.ServerEnvironment : Swift.Equatable {}
+extension TreasureComicsFoundationKit.FoundationKitProperty.ServerEnvironment : Swift.Hashable {}
+extension TreasureComicsFoundationKit.FoundationKitProperty.MemberType : Swift.Equatable {}
+extension TreasureComicsFoundationKit.FoundationKitProperty.MemberType : Swift.Hashable {}
+extension TreasureComicsFoundationKit.PreviewDeviceType : Swift.Equatable {}
+extension TreasureComicsFoundationKit.PreviewDeviceType : Swift.Hashable {}
+extension TreasureComicsFoundationKit.PreviewDeviceType : Swift.RawRepresentable {}
+extension TreasureComicsFoundationKit.NotifyStatus : Swift.Equatable {}
+extension TreasureComicsFoundationKit.NotifyStatus : Swift.Hashable {}
+extension TreasureComicsFoundationKit.NotifyStatus : Swift.RawRepresentable {}
+extension TreasureComicsFoundationKit.SpeakStatus : Swift.Equatable {}
+extension TreasureComicsFoundationKit.SpeakStatus : Swift.Hashable {}
+extension TreasureComicsFoundationKit.SpeakStatus : Swift.RawRepresentable {}
+extension TreasureComicsFoundationKit.TXScreenMessageHandler.ToastKind : Swift.Equatable {}
+extension TreasureComicsFoundationKit.TXScreenMessageHandler.ToastKind : Swift.Hashable {}
+extension TreasureComicsFoundationKit.TrackingAuthorizationStatus : Swift.Equatable {}
+extension TreasureComicsFoundationKit.TrackingAuthorizationStatus : Swift.Hashable {}
+extension TreasureComicsFoundationKit.PurchaseResultType : Swift.Equatable {}
+extension TreasureComicsFoundationKit.PurchaseResultType : Swift.Hashable {}
+extension TreasureComicsFoundationKit.PurchaseResultType : Swift.RawRepresentable {}
+extension TreasureComicsFoundationKit.SpeakAction : Swift.Equatable {}
+extension TreasureComicsFoundationKit.SpeakAction : Swift.Hashable {}
+extension TreasureComicsFoundationKit.SpeakAction : Swift.RawRepresentable {}
