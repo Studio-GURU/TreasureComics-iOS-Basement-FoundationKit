@@ -30,15 +30,15 @@
 		</data>
 		<key>ios-arm64/TreasureComicsFoundationKit.framework/TreasureComics.xcconfig</key>
 		<data>
-		BYau4IXHVvKZrrDaB2rwbGpmln4=
+		Hp+YVfeHcKUWjoSOiLJznJiIORo=
 		</data>
 		<key>ios-arm64/TreasureComicsFoundationKit.framework/TreasureComicsFoundationKit</key>
 		<data>
-		dIvfJYErMrU+mCoJ/ZXIG93Sb6o=
+		pHDoQ6JHy3FF89i3uuRyAegrp5s=
 		</data>
 		<key>ios-arm64/TreasureComicsFoundationKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		mxBVVu40R1L7npOg+m1eNH9IgAc=
+		vKO2ZtZIoojNvDt2syN5w3rqrUQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TreasureComicsFoundationKit.framework/Info.plist</key>
 		<data>
@@ -82,15 +82,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TreasureComicsFoundationKit.framework/TreasureComics.xcconfig</key>
 		<data>
-		BYau4IXHVvKZrrDaB2rwbGpmln4=
+		Hp+YVfeHcKUWjoSOiLJznJiIORo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TreasureComicsFoundationKit.framework/TreasureComicsFoundationKit</key>
 		<data>
-		eUVtjxp6eVIWYyBUswaJoL6V9NI=
+		Rbqs5cIx5rubYsd3oIdaahZBaBY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TreasureComicsFoundationKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		cZEDiGcPGiIYsAUaR8cMuJoKJ9A=
+		6TsUif+91tnJD0n3sCPuw5BLzZs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -165,33 +165,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BYau4IXHVvKZrrDaB2rwbGpmln4=
+			Hp+YVfeHcKUWjoSOiLJznJiIORo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ayIC5SxM2RJyy9cuBWnbwOyUx9RlylcyoYFWh0v++r0=
+			bEa467Wh03/BoNB0JGgvqDNzM74tzRBEoaYhCIN/Gdg=
 			</data>
 		</dict>
 		<key>ios-arm64/TreasureComicsFoundationKit.framework/TreasureComicsFoundationKit</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dIvfJYErMrU+mCoJ/ZXIG93Sb6o=
+			pHDoQ6JHy3FF89i3uuRyAegrp5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			tGR87ots9b34tFMegy5Ik9ErB7DsCyJYxsomTrVOloA=
+			hdpRdYOp0zRuz6jYL2Q5sdpLsyjL+VZkGvW7v4a0ILY=
 			</data>
 		</dict>
 		<key>ios-arm64/TreasureComicsFoundationKit.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mxBVVu40R1L7npOg+m1eNH9IgAc=
+			vKO2ZtZIoojNvDt2syN5w3rqrUQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			zdwjcTxGP1gqbAh+nwGGNByZIHg5Mxi7OIZ8lEcePgQ=
+			Mf1eYObXpSOSIPBe587kNxxwxiIlozYyNnt/mCLPwnM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TreasureComicsFoundationKit.framework/Info.plist</key>
@@ -308,33 +308,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BYau4IXHVvKZrrDaB2rwbGpmln4=
+			Hp+YVfeHcKUWjoSOiLJznJiIORo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ayIC5SxM2RJyy9cuBWnbwOyUx9RlylcyoYFWh0v++r0=
+			bEa467Wh03/BoNB0JGgvqDNzM74tzRBEoaYhCIN/Gdg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TreasureComicsFoundationKit.framework/TreasureComicsFoundationKit</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eUVtjxp6eVIWYyBUswaJoL6V9NI=
+			Rbqs5cIx5rubYsd3oIdaahZBaBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cWqLEv8lh0P2nWg9FzNa1wDJLBkwYA9yqCd3uvSuX4I=
+			WFtUXUNxUcMSkoziGR64fcQHTtGZvc7b8HmDQ3fBvJo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TreasureComicsFoundationKit.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cZEDiGcPGiIYsAUaR8cMuJoKJ9A=
+			6TsUif+91tnJD0n3sCPuw5BLzZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			3xT30y4GITmjHn4tDJ7R2KY9oIPByIp2elH4zCKT410=
+			dfFlN4KpRSI3WyJB2NGC3i/SRoGW4zdukBjYH/CAhZk=
 			</data>
 		</dict>
 	</dict>
