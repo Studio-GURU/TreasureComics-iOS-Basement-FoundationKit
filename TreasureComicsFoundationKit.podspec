@@ -3,13 +3,13 @@ Pod::Spec.new do |spec|
     spec.swift_version          = '5.0'
     spec.name                   = 'TreasureComicsFoundationKit'
     spec.module_name            = 'TreasureComicsFoundationKit'
-    spec.version                = '25.5.2'
+    spec.version                = '25.5.3'
     spec.summary                = 'GuruCompany TreasureComics iOS SDK'
     spec.homepage               = 'https://gurucompany.gitbook.io/treasureisland/ios-sdk/release'
     spec.author                 = { 'GuruCompany TreasureComics[Studio-Guru]' => 'engineer@gurucompany.co.kr' }
     spec.platform               = :ios, '15.6'
     spec.ios.deployment_target  = '15.6'
-    spec.source                 = { :git => 'https://github.com/Studio-GURU/TreasureComics-iOS-Basement-FoundationKit.git', :tag => '25.5.2' }
+    spec.source                 = { :git => 'https://github.com/Studio-GURU/TreasureComics-iOS-Basement-FoundationKit.git', :tag => '25.5.3' }
     spec.vendored_frameworks    = 'TreasureComicsFoundationKit.xcframework'
     spec.description            = 'Library for providing a webtoon system for iOS application in GuruCompany'
     spec.license                = { :type => 'MIT', :text => <<-LICENSE
